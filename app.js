@@ -190,13 +190,13 @@ function installLayers() {
           'interpolate',
           ['linear'],
           ['get', 'intra_norm'],
-          0, '#d9c9c9',
-          0.08, '#d2bebe',
-          0.18, '#c9b0b0',
-          0.32, '#bb9595',
-          0.50, '#ab7474',
-          0.72, '#935959',
-          1, '#6a2f2f'
+          0, '#c9dce5',
+          0.08, '#b6d5e2',
+          0.18, '#9acde3',
+          0.32, '#7bc8e8',
+          0.50, '#4FC3F7',
+          0.72, '#35a9dc',
+          1, '#1f6f96'
         ]
       ],
       'fill-opacity': 0.95
