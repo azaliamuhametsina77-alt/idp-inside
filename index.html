@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Внутренние перемещения внутри штатов Судана</title>
+  <link rel="stylesheet" href="https://unpkg.com/maplibre-gl@5.19.0/dist/maplibre-gl.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <div id="app">
+    <div id="map"></div>
+
+    <aside id="infoPanel" class="panel info-panel" aria-label="Описание карты">
+      <div class="info-panel-top">
+        <button id="infoToggle" class="info-toggle" type="button" aria-expanded="true">Скрыть</button>
+      </div>
+
+      <div id="infoPanelBody" class="info-panel-body">
+        <div class="info-slides">
+          <section class="info-slide is-active" data-slide="0">
+            <div class="info-copy">
+              Эта карта показывает внутриштатные перемещения в Судане по состоянию на 31 декабря 2025 года. Чем темнее красный цвет — тем больше людей стали перемещенными внутри своего штата. При наведении или клике на штат показывается точное число.
+              <br><br>
+              Для Абьея данных в базе нет: это спорный нефтеносный район на границе Судана и Южного Судана, имеющий особый административный статус.
+              <br><br>
+              Источник данных — Международная организация по миграции (IOM DTM).
+            </div>
+          </section>
+        </div>
+    </aside>
+
+    <div id="hoverTooltip" class="hover-tooltip is-hidden" aria-live="polite"></div>
+
+    <aside class="panel legend-panel" aria-label="Легенда карты">
+      <div class="eyebrow">Интенсивность</div>
+      <div class="legend-scale"></div>
+      <div class="legend-range">
+        <span>0</span>
+        <span id="legendMax">—</span>
+      </div>
+    </aside>
+
+    <div id="status" class="status">Загрузка данных…</div>
+  </div>
+
+  <script src="https://unpkg.com/maplibre-gl@5.19.0/dist/maplibre-gl.js"></script>
+  <script src="./app.js"></script>
+</body>
+</html>
