@@ -7,12 +7,12 @@
   --muted: #b2b4bc;
   --shadow: 0 20px 52px rgba(0, 0, 0, 0.35);
   --radius: 18px;
-  --red-1: #f4eaea;
-  --red-2: #dfc6c6;
-  --red-3: #c99696;
-  --red-4: #b26e6e;
-  --red-5: #a05a5a;
-  --red-6: #a84646;
+  --red-1: #dfcdcd;
+  --red-2: #d4b8b8;
+  --red-3: #c79d9d;
+  --red-4: #b57e7e;
+  --red-5: #935959;
+  --red-6: #6a2f2f;
 }
 
 * { box-sizing: border-box; }
