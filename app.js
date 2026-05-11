@@ -190,13 +190,13 @@ function installLayers() {
           'interpolate',
           ['linear'],
           ['get', 'intra_norm'],
-          0, '#c9dce5',
-          0.08, '#b6d5e2',
-          0.18, '#9acde3',
-          0.32, '#7bc8e8',
-          0.50, '#4FC3F7',
-          0.72, '#35a9dc',
-          1, '#1f6f96'
+          0, '#ebe7f4',
+          0.08, '#d8d2e8',
+          0.18, '#c7bedf',
+          0.32, '#b4a8d3',
+          0.50, '#9d8fc2',
+          0.72, '#7C6FA6',
+          1, '#4e4372'
         ]
       ],
       'fill-opacity': 0.95
@@ -210,8 +210,8 @@ function installLayers() {
     paint: {
       'fill-color': [
         'case',
-        ['boolean', ['feature-state', 'selected'], false], 'rgba(255,255,255,0.12)',
-        ['boolean', ['feature-state', 'hovered'], false], 'rgba(255,255,255,0.08)',
+        ['boolean', ['feature-state', 'selected'], false], 'rgba(196,184,235,0.18)',
+        ['boolean', ['feature-state', 'hovered'], false], 'rgba(196,184,235,0.12)',
         'rgba(0,0,0,0)'
       ],
       'fill-opacity': 1
@@ -225,8 +225,8 @@ function installLayers() {
     paint: {
       'line-color': [
         'case',
-        ['boolean', ['feature-state', 'selected'], false], 'rgba(255,255,255,0.72)',
-        ['boolean', ['feature-state', 'hovered'], false], 'rgba(255,255,255,0.44)',
+        ['boolean', ['feature-state', 'selected'], false], 'rgba(196,184,235,0.88)',
+        ['boolean', ['feature-state', 'hovered'], false], 'rgba(196,184,235,0.58)',
         'rgba(255,255,255,0.18)'
       ],
       'line-width': [
